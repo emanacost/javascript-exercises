@@ -9,9 +9,13 @@
 
 // Add your code right below, good luck!
 
+const firstName = "Luigi";
 
+const lastName = "Mario";
 
+const thisYear = 2025;
 
+const birthYear = 1983;
 
 // Do not change this
 module.exports = {
