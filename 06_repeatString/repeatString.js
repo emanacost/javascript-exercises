@@ -6,7 +6,8 @@ const repeatString = function(string, num) {
         } else {
             result = result + string;
         }
-    }
+    };
+    return result;
 };
 
 // Do not edit below this line
