@@ -1,7 +1,9 @@
 const removeFromArray = function(arr, ...rm) {
     rm.forEach(rm => {
-    rmVal = arr.indexOf(rm);
-    arr.splice(rmVal, 1);
+        while(arr.includes(rm)){
+            rmVal = arr.indexOf(rm);
+            arr.splice(rmVal, 1);
+        }
     })
     return arr
 };
