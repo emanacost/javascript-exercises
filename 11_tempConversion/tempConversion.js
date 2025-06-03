@@ -4,6 +4,8 @@ const convertToCelsius = function(num) {
 };
 
 const convertToFahrenheit = function(num) {
+  result = num * 9/5 + 32;
+  return result.toFixed(1);
 };
 
 // Do not edit below this line
