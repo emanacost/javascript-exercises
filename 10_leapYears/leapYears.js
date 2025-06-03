@@ -3,7 +3,7 @@
 // but 400 is ok
 
 const leapYears = function(year) {
-
+    if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0) )
 };
 
 // Do not edit below this line
