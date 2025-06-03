@@ -3,7 +3,7 @@ const convertToCelsius = function(num) {
   return result.toFixed(1);
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(num) {
 };
 
 // Do not edit below this line
