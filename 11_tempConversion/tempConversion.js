@@ -1,5 +1,5 @@
 const convertToCelsius = function(num) {
-  result = ( num - 32 ) * 9/5;
+  result = ( num - 32 ) * 5/9;
   return result.toFixed(1);
 };
 
