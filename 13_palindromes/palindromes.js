@@ -1,5 +1,4 @@
 const palindromes = function (a) {
-    filterOut = ['!', '.']
     sentence = a.split('').filter( item => /[a-zA-Z1-9]/.test(item));
     lowerCaseSentence = [];
     sentence.forEach(letter => {
