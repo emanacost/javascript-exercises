@@ -5,10 +5,18 @@ const findTheOldest = function(a) {
     result = '';
     oldest = 0;
     a.forEach(obj => {
-        age = obj.yearOfDeath - obj.yearOfBirth;
-        if ( age > oldest) {
-            oldest = age;
-            result = obj;
+        if ( "yearOfDeath" in obj) {
+            age = obj.yearOfDeath - obj.yearOfBirth;
+            if ( age > oldest) {
+                oldest = age;
+                result = obj;
+            };        
+        } else {
+            age = year - obj.yearOfBirth;
+            if ( age > oldest) {
+                oldest = age;
+                result = obj;
+            };  
         };
     });
     return result;
