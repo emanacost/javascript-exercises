@@ -1,6 +1,32 @@
-const findTheOldest = function() {
-
+const findTheOldest = function(a) {
+    // For loop that checks each time if the current person is the oldest so far
+        // If yes store that person in a string; loop
+        // If no loop
+    result = '';
+    oldest = 0;
+    if (a.yearOfDeath != Object(a.yearOfDeath) ) {
+        a.forEach(obj => {
+            age = year - obj.yearOfBirth;
+            if ( age > oldest) {
+                oldest = age;
+                result = obj;
+        };
+    });
+    return result;
+    } else {
+        a.forEach(obj => {
+            age = obj.yearOfDeath - obj.yearOfBirth;
+            if ( age > oldest) {
+                oldest = age;
+                result = obj;
+            };
+        });
+    return result;
+    };
 };
+
+const date = new Date();
+const year = date.getFullYear();
 
 // Do not edit below this line
 module.exports = findTheOldest;
